@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz
 import json
 import os
 import re
@@ -114,7 +114,7 @@ def extract_questions_from_pdf(pdf_path, output_image_dir, output_json_path):
         json.dump(questions, json_file, ensure_ascii=False, indent=4)
 
 # Caminhos dos arquivos
-pdf_file_path = "microdados_enem_2023/PROVAS E GABARITOS/LEITOR_TELA/ENEM_2023_P1_CAD_09_DIA_1_LARANJA_LEITOR_TELA_NVDA_LC.pdf"
+pdf_file_path = "teste_enem_unzip/PROVAS E GABARITOS/LEITOR_TELA/ENEM_2023_P1_CAD_09_DIA_1_LARANJA_LEITOR_TELA_NVDA_CH.pdf"
 output_image_dir = "imagem_pdf"
 output_json_path = "enem_questions_corrected.json"
 
